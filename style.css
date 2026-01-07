@@ -1116,7 +1116,7 @@ textarea {
 
 /* RESPONSIVE DESIGN (MEDIA QUERIES) */
 @media (max-width: 768px) {
-    /* --- MOBILE NAV FIX --- */
+    /* --- 1. MOBILE NAV (Ye aapka purana code hai, isse rehne dein) --- */
     .glass-nav {
         position: fixed !important;
         top: auto !important;
@@ -1139,6 +1139,42 @@ textarea {
         backdrop-filter: blur(15px) !important;
         border: 1px solid rgba(255, 255, 255, 0.1) !important;
     }
+
+    /*  SKILLS MOBILE FIX (Naya Add Karein)  */
+    /* Mobile par table hamesha dikhegi, bina hover ke */
+    .skill-table, .skill-tags {
+        max-height: 1000px !important; /* Pehle 0 tha, ab khul jayega */
+        opacity: 1 !important;         /* Pehle invisible tha, ab dikhega */
+        transform: translateY(0) !important;
+        margin-top: 15px !important;
+        pointer-events: auto !important;
+    }
+    
+    .skill-card {
+        padding: 25px 15px !important;
+    }
+
+    .skill-icon {
+        font-size: 2.5rem !important; /* Chota kiya taaki jagah bane */
+    }
+
+    /*  PROJECTS MOBILE FIX (Naya Add Karein)  */
+    /* Buttons (View/GitHub) hamesha dikhenge */
+    .project-overlay {
+        opacity: 1 !important; /* Pehle hover par 1 hota tha, ab hamesha rahega */
+        background: rgba(10, 10, 18, 0.8) !important; 
+        visibility: visible !important;
+    }
+
+    .tech-stack, .overlay-btns {
+        transform: translateY(0) !important; /* Pehle nichu se aate the, ab fixed rahenge */
+        opacity: 1 !important;
+    }
+
+    .project-img-wrapper {
+        height: 220px !important;
+    }
+} /* Ye bracket band hona zaroori hai */
 
     /* Override hidden state on mobile */
     .glass-nav.nav-hidden {
