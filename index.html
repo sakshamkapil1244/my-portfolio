@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saksham Kapil | Full Stack Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Saksham Kapil,
+         a B.Tech CSE student and Full Stack Developer. 
+        Expert in Java, React.js, and Cloud Operations.">
+    <meta name="keywords"
+        content="Saksham Kapil, Saksham Kapil Portfolio, 
+        Full Stack Developer Saharanpur
+        , B.Tech CSE Student Portfolio">
+    <meta name="author" content="Saksham Kapil">
+
+    <meta property="og:title" content="Saksham Kapil | Portfolio">
+    <meta property="og:description" content="Check out my projects and technical expertise in Web Development.">
+    <meta property="og:image" content="images/profile.jpg">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body class="bg-home">
+
+    <div class="theme-switch-wrapper">
+        <button id="theme-toggle" class="theme-btn">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+    </div>
+    <button id="scrollTop" class="scroll-btn"><i class="fas fa-arrow-up"></i></button>
+    <div class="logo-container logo-nav-logic">
+        <a href="#" class="logo-text">Port<span>folio</span></a>
+    </div>
+    <canvas id="starfield"></canvas>
+
+    <nav class="glass-nav" id="mainNav">
+        <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+        <a href="#skills" class="nav-link"><i class="fas fa-tools"></i> Skills</a>
+        <a href="#projects" class="nav-link"><i class="fas fa-tasks"></i> Projects</a>
+        <a href="#experience" class="nav-link"><i class="fas fa-history"></i> Experience</a>
+        <a href="#certifications" class="nav-link"><i class="fas fa-award"></i> certificates</a>
+        <a href="https://drive.google.com/file/d/17oapDR7TBT1qjrhjLN7a_DYIEvgmq5dp/view?usp=drive_link" target="_blank"
+            class="nav-link"><i class="fas fa-file-pdf"></i> Resume</a>
+        <a href="#contact" class="nav-link"><i class="fas fa-phone"></i> Contact</a>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="home-container">
+            <div class="home-content animate-left">
+                <h1 class="gradient-name">Hi, I'm <br><span>Saksham Kapil</span></h1>
+                <h1 class="subtitle">I'm a <span id="typing-text" class="highlight"></span></h1>
+
+                <p class="subtitle">Final Year B.Tech Student | Java Full Stack Developer | Strong Foundation in DSA</p>
+
+                <div class="home-btns">
+                    <a href="#projects" class="icon-btn"><i class="fas fa-briefcase"></i> View Projects</a>
+                    <a href="#contact" class="icon-btn"><i class="fas fa-paper-plane"></i> Let's Connect</a>
+                </div>
+            </div>
+
+            <div class="home-profile animate-right">
+                <div class="profile-glow-box">
+                    <img src="profile.jpg" alt="Saksham" class="home-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="about-header-top">
+            <h2>About Me</h2>
+            <p>Engineering the Future with Code</p>
+        </div>
+
+        <div class="about-wrapper glass-card">
+            <div class="about-text-content">
+                <h3 class="about-subtitle">Final Year B.Tech Student & Java Developer</h3>
+                <p>I am a passionate <strong>Java Full Stack Developer</strong> currently in my final year of B.Tech. My
+                    journey is driven by a deep curiosity for how complex systems work and a dedication to mastering
+                    <strong>Data Structures and Algorithms (DSA)</strong>.
+                </p>
+
+                <p>While I am constantly sharpening my problem-solving skills, my core expertise lies in building
+                    end-to-end applications using <strong>Java, Spring Boot, and React.js</strong>. I believe that
+                    coding is not just about memorizing syntax, but about developing a <strong>logic-building
+                        mindset</strong> that stays forever.</p>
+
+                <p>I have hands-on experience from my training at <strong>TCIL-IT Chandigarh</strong>, where I worked on
+                    integrating Java backends with modern frontend technologies. From designing MySQL databases to
+                    deploying on cloud platforms like AWS and Netlify, I enjoy every bit of the development lifecycle.
+                </p>
+
+                <p>A key highlight of my journey was participating in the <strong>Smart India Hackathon 2024</strong>.
+                    This experience was instrumental in teaching me how to collaborate with a team to build innovative
+                    solutions for real-world government problem statements under tight deadlines.</p>
+
+                <div class="about-resume-btns">
+                    <a href="https://drive.google.com/file/d/1McbSJaTc1XoKa2AZkqkPHNaXX32FAJTz/view?usp=drive_link"
+                        target="_blank" class="btn primary-btn">
+                        <i class="fas fa-eye"></i> View Resume
+                    </a>
+                    <a href="https://drive.google.com/file/d/1McbSJaTc1XoKa2AZkqkPHNaXX32FAJTz/view?usp=drive_link"
+                        download class="btn secondary-btn">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+
+            <div class="about-image-content">
+                <div class="about-img-container">
+                    <img src="about-profile.jpg" alt="Saksham Kapil">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title reveal">Technical <span class="highlight">Expertise</span></h2>
+        <div class="skills-pro-grid">
+            <div class="skill-card reveal">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <h3>Programming</h3>
+                <table class="skill-table">
+                    <tbody>
+                        <tr>
+                            <td>Java</td>
+                            <td>90%</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>75%</td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>80%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="skill-tags"><span>Core Java</span><span>OOPs</span><span>Logic Building</span></div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Web Tech</h3>
+                <table class="skill-table">
+                    <tbody>
+                        <tr>
+                            <td>HTML5 / CSS3</td>
+                            <td>95%</td>
+                        </tr>
+                        <tr>
+                            <td>React.js</td>
+                            <td>85%</td>
+                        </tr>
+                        <tr>
+                            <td>Node.js</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td>Tailwind CSS</td>
+                            <td>90%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="skill-tags"><span>REST APIs</span><span>Responsive UI</span></div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h3>Databases</h3>
+                <table class="skill-table">
+                    <tbody>
+                        <tr>
+                            <td>MySQL</td>
+                            <td>85%</td>
+                        </tr>
+                        <tr>
+                            <td>Spring Boot</td>
+                            <td>80%</td>
+                        </tr>
+                        <tr>
+                            <td>MongoDB</td>
+                            <td>65%</td>
+                        </tr>
+                        <tr>
+                            <td>Hibernate</td>
+                            <td>75%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="skill-tags"><span>JPA</span><span>Postman</span><span>SQL</span></div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                <h3>App Dev</h3>
+                <table class="skill-table">
+                    <tbody>
+                        <tr>
+                            <td>Android (Java)</td>
+                            <td>75%</td>
+                        </tr>
+                        <tr>
+                            <td>React Native</td>
+                            <td>60%</td>
+                        </tr>
+                        <tr>
+                            <td>XML Design</td>
+                            <td>85%</td>
+                        </tr>
+                        <tr>
+                            <td>App Deployment</td>
+                            <td>65%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="skill-tags"><span>Firebase</span><span>Android Studio</span></div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Cloud & Tools</h3>
+                <table class="skill-table">
+                    <tbody>
+                        <tr>
+                            <td>Git / GitHub</td>
+                            <td>90%</td>
+                        </tr>
+                        <tr>
+                            <td>AWS Basic</td>
+                            <td>55%</td>
+                        </tr>
+                        <tr>
+                            <td>Docker</td>
+                            <td>50%</td>
+                            <!-- </tr>+- -->
+                        <tr>
+                            <td>Vercel / Netlify</td>
+                            <td>80%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="skill-tags"><span>Version Control</span><span>CI/CD</span></div>
+            </div>
+
+            <div class="skill-card reveal">
+                <div class="skill-icon"><i class="fas fa-user-check"></i></div>
+                <h3>Soft Skills</h3>
+                <table class="skill-table">
+                    <tbody>
+                        <tr>
+                            <td>Problem Solving</td>
+                            <td>95%</td>
+                        </tr>
+                        <tr>
+                            <td>Team Work</td>
+                            <td>90%</td>
+                        </tr>
+                        <tr>
+                            <td>Agile Methodology</td>
+                            <td>80%</td>
+                        </tr>
+                        <tr>
+                            <td>Communication</td>
+                            <td>85%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="skill-tags"><span>Management</span><span>Leadership</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+        <div class="grid">
+
+            <div class="glass-card project-card reveal">
+                <div class="project-img-wrapper">
+                    <img src="project1.jpg" alt="QR Code Generator" class="project-img">
+                    <div class="project-overlay">
+                        <div class="tech-stack">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                        <div class="overlay-btns">
+                            <a href="https://github.com/sakshamkapil1244/qr-code-generator" target="_blank"
+                                title="View Code" class="btn-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://sakshamkapil1244.github.io/qr-code-generator/" title="Live Demo"
+                                class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Interactive QR Generator</h3>
+                    <p>A dynamic web tool that generates high-quality QR codes instantly from URLs or text. Built with a
+                        focus on clean UI and seamless user experience.</p>
+                </div>
+            </div>
+
+            <div class="glass-card project-card reveal">
+                <div class="project-img-wrapper">
+                    <img src="project2.png" alt="Portfolio Website" class="project-img">
+                    <div class="project-overlay">
+                        <div class="tech-stack">
+                            <span>HTML5</span><span>CSS3</span><span>JS</span><span>Typed.js</span>
+                        </div>
+                        <div class="overlay-btns">
+                            <a href="https://github.com/sakshamkapil1244/my-portfolio" title="View Code" class="btn-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://sakshamkapil1244.github.io/my-portfolio/" title="Live Demo" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Professional Developer Portfolio</h3>
+                    <p>A fully responsive personal brand website featuring smooth scroll animations, dynamic background
+                        transitions, and SEO optimization to showcase my technical journey.</p>
+                </div>
+            </div>
+             
+             
+             <div class="glass-card project-card reveal">
+    <div class="project-img-wrapper">
+        <img src="project3.png" alt="Spotify Clone" class="project-img">
+        <div class="project-overlay">
+            <div class="tech-stack">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Web Audio API</span>
+            </div>
+            <div class="overlay-btns">
+                <a href="https://github.com/sakshamkapil1244/spotify-clone" target="_blank" title="View Code" class="btn-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://sakshamkapil1244.github.io/spotify-clone" target="_blank" title="Live Demo" class="btn-icon">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="project-info">
+        <h3>Spotify Music Player Clone</h3>
+        <p>A functional music streaming interface featuring a dynamic play/pause system, seek-bar synchronization, and a responsive sidebar. Focuses on high-fidelity UI and DOM manipulation.</p>
+    </div>
+</div>
+
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="about-header-top">
+            <h2>Experience & <span>Education</span></h2>
+            <p>My Technical Growth Journey</p>
+        </div>
+        <div class="timeline-container">
+
+            <div class="timeline-item">
+                <div class="timeline-date">2022 - 2026</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content-card reveal">
+                    <div class="exp-card-header">
+                        <h3>B.Tech in Computer Science</h3>
+                        <span class="highlight">Final Year Student</span>
+                    </div>
+                    <p class="exp-description">
+                        Pursuing Engineering with a focus on Software Development. Maintaining a strong foundation in
+                        Computer Science fundamentals and modern programming practices.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2024 (Industrial Training)</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content-card reveal">
+                    <div class="exp-card-header">
+                        <h3>Java Full Stack Trainee</h3>
+                        <span class="highlight">TCIL-IT Chandigarh</span>
+                    </div>
+                    <p class="exp-description">
+                        Completed 6 weeks of intensive training. Gained hands-on experience in Java J2EE, Servlets, and
+                        MySQL. Built real-world logic for web-based applications.
+                    </p>
+                    <div class="exp-tags"><span class="tag-pill">Backend</span><span class="tag-pill">Database</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2024 - Present</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content-card reveal">
+                    <div class="exp-card-header">
+                        <h3>Independent Developer</h3>
+                        <span class="highlight">Personal Projects</span>
+                    </div>
+                    <p class="exp-description">
+                        Developing utility tools like QR Code Generators and Personal Portfolios. Deep diving into Data
+                        Structures and Algorithms to enhance logical thinking and code efficiency.
+                    </p>
+                    <div class="exp-tags"><span class="tag-pill">JavaScript</span><span class="tag-pill">DSA</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="about-header-top">
+            <h2>Achievements & <span class="highlight">Credentials</span></h2>
+            <p>Industry-Validated Technical Certifications</p>
+        </div>
+
+        <div class="cert-grid-3-col">
+
+            <div class="cert-card glass-card project-card reveal">
+                <div class="cert-badge">National Level</div>
+                <i class="fas fa-trophy cert-icon" style="color: #FFD700;"></i>
+                <div class="cert-info">
+                    <h3>Smart India Hackathon 2024</h3>
+                    <p>Participant - Govt. of India</p>
+                    <small>Worked on solving real-world challenges in a fast-paced team environment.</small>
+                </div>
+                <a href="https://www.linkedin.com/posts/saksham-kapil-790b16298_smartindiahackathon-sih2024-innovation-activity-7410434011300290560-eB5A"
+                    target="_blank" class="cert-link">View Proof</a>
+            </div>
+
+            <div class="cert-card glass-card project-card reveal">
+                <i class="fas fa-network-wired cert-icon" style="color: #00d2ff;"></i>
+                <div class="cert-info">
+                    <h3>Cloud Job Simulation</h3>
+                    <p>Datacom | Forage</p>
+                    <small>Completed virtual experience in cloud infrastructure and networking tasks.</small>
+                </div>
+                <a href="https://www.linkedin.com/posts/saksham-kapil-790b16298_grateful-for-the-opportunity-to-learn-activity-7375774988072710144-mhaR"
+                    target="_blank" class="cert-link">Verify Badge</a>
+            </div>
+
+            <div class="cert-card glass-card project-card reveal">
+                <div class="cert-badge">AWS Verified</div>
+                <i class="fab fa-aws cert-icon" style="color: #FF9900;"></i>
+                <div class="cert-info">
+                    <h3>AWS Academy Graduate</h3>
+                    <p>Cloud Security Foundations</p>
+                    <small>Issued: Aug 04, 2024</small>
+                    <p class="cert-desc">Focus on threat detection and AWS infrastructure security.</p>
+                </div>
+                <a href="https://www.linkedin.com/posts/saksham-kapil-790b16298_aws-academy-graduate-aws-academy-cloud-activity-7225867571105841152-2f2Q"
+                    target="_blank" class="cert-link">Verify Badge</a>
+            </div>
+
+            <div class="cert-card glass-card project-card reveal">
+                <div class="cert-badge">Red Hat Academy</div>
+                <i class="fab fa-redhat cert-icon" style="color: #EE0000;"></i>
+                <div class="cert-info">
+                    <h3>Python Programming (AD141)</h3>
+                    <p>Red Hat Training</p>
+                    <small>Issued: March 1, 2024</small>
+                    <p class="cert-desc">Successfully attended "Introduction to Python Programming" (AD141).</p>
+                </div>
+                <a href="https://drive.google.com/file/d/1UheH8KEJN9IySmHuGgkhx1Kf_vkf5By0/view?usp=drive_link"
+                    target="_blank" class="cert-link">View Certificate</a>
+            </div>
+
+            <div class="cert-card glass-card project-card reveal">
+                <div class="cert-badge">Grade A</div>
+                <i class="fas fa-layer-group cert-icon" style="color: #00d2ff;"></i>
+                <div class="cert-info">
+                    <h3>Full Stack Development</h3>
+                    <p>ICS Chandigarh</p>
+                    <small>29-05-2024 to 12-07-2024</small>
+                    <p class="cert-desc">6-week training in Full Stack Development with Grade A.</p>
+                </div>
+                <a href="https://drive.google.com/file/d/1XVMRglXeEN708bEbX2HoiLtIT0L1YPBx/view?usp=drive_link"
+                    target="_blank" class="cert-link">View Training Proof</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="contact-header">
+            <h2>Get In <span class="highlight">Touch</span></h2>
+            <p>Let's work together</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-box info-box">
+                <h3>Contact Info</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="item-text"><span>Email</span>
+                        <p>Sakshamkapil123@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="item-text"><span>Call</span>
+                        <p>+91 7818994613</p>
+                    </div>
+                </div>
+                <div class="contact-item"><i class="fas fa-map-marker-alt"></i>
+                    <p>Saharanpur, UP, India</p>
+                </div>
+                <div class="contact-socials">
+                    <a href="https://www.linkedin.com/in/saksham-kapil-790b16298"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/sakshamkapil1244"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/saksham_sharma_1244/#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-box form-box">
+                <form id="mailForm">
+                    <input type="text" name="from_name" placeholder="Name" required>
+                    <input type="email" name="from_email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("43beOLB9yCu2jY8A7");
+        })();
+    </script>
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-line"></div>
+            <p>&copy; <span id="current-year"></span> <span class="highlight">Saksham Kapil</span> | All Rights Reserved
+            </p>
+            <div class="footer-socials-minimal">
+                <a href="https://github.com/sakshamkapil1244" target="_blank" rel="noopener"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/saksham-kapil-790b16298" target="_blank" rel="noopener"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
